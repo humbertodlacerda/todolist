@@ -8,14 +8,12 @@ abstract class AbstractService implements ServiceInterface
 {
     public function getAll()
     {
-        $response = $this->getRepository()->getAll();
-        return $response;
+        return $this->getRepository()->getAll();
     }
 
     public function find(int $id)
     {
-        $response = $this->getRepository()->find($id);
-        return $response;
+        return $this->getRepository()->find($id);
     }
 
     public function save(array $params)
@@ -39,7 +37,6 @@ abstract class AbstractService implements ServiceInterface
 
     public function create(array $data)
     {
-        $entity = $this->getRepository()->create($data);
-        return $entity;
+        return $this->getRepository()->create($data);
     }
 }
