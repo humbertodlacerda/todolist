@@ -39,4 +39,9 @@ abstract class AbstractService implements ServiceInterface
     {
         return $this->getRepository()->create($data);
     }
+
+    public function registerUser(array $data)
+    {
+        return $this->getRepository()->createUser($data);
+    }
 }

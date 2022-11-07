@@ -21,7 +21,8 @@ use App\Http\Controllers\UserController;
 // });
 
 Route::apiResource('/user',UserController::class);
-Route::post('/register', [AuthController::class,'register']);
+Route::post('/register',[UserController::class, 'newUser']);
+// Route::post('/register', [AuthController::class,'register']);
 
 
 // Route::middleware(['auth:sanctum','admin'])->group(function () {

@@ -40,4 +40,9 @@ abstract class AbstractRepository implements RepositoryInterface
     {
         return $this->getmodel()->find($id)->delete();
     }
+
+    public function createUser(array $params)
+    {
+        return $this->getModel()->create($params);
+    }
 }

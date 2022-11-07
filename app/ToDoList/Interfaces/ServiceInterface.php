@@ -18,4 +18,5 @@ interface ServiceInterface
 
     public function create(array $data);
 
+    public function registerUser(array $data);
 }

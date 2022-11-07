@@ -10,4 +10,12 @@ class UserController extends AbstractController
     {
         $this->service = $service;
     }
+
+    public function taskOrUser()
+    {
+        $user = $this->auth('sanctum')->user();
+        $task = $user->task();
+
+        return $task;
+    }
 }

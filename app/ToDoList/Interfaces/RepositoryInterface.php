@@ -18,4 +18,6 @@ interface RepositoryInterface
 
     public function delete(int $id);
 
+    public function createUser(array $params);
+
 }
